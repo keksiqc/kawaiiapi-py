@@ -1,0 +1,38 @@
+# kawaii api
+
+The [kawaii api](https://kawaii.red/) from Error44 as [python package](https://pypi.org/project/kawaiiapi/) 
+
+# Download
+
+```
+pip install kawaiiapi
+```
+
+# Examples
+
+```python
+import kawaiiapi
+
+api = kawaiiapi.Kawaii("token")
+
+await api.endpoints("gif")
+
+await api.get("gif", "kiss")
+
+await api.gif("kiss")
+
+stats = await api.stats()
+```
+
+# All Stats
+
+```python
+stats.endpoints
+stats.all
+stats.failed
+stats.history
+stats.most_endpoint
+stats.most_endpoints
+stats.most_type
+stats.most_types
+```
