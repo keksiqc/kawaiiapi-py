@@ -17,7 +17,7 @@ setup(
     install_requires=[
         "aiohttp >= 3.6"
     ],
-    url='https://github.com/Keksiqc/kawaiiapi-py',
+    url='https://github.com/keksiqc/kawaiiapi-py',
     py_modules=['kawaiiapi'],
     packages=find_packages(),
     classifiers=[
