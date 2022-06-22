@@ -1,7 +1,7 @@
 import asyncio
 from kawaiiapi import Kawaii
 
-api = Kawaii("token")
+api = Kawaii("anonymous")
 
 loop = asyncio.get_event_loop()
 
