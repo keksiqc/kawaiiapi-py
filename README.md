@@ -13,11 +13,13 @@ pip install kawaiiapi
 ```python
 import kawaiiapi
 
-api = kawaiiapi.Kawaii("token")
+api = kawaiiapi.Kawaii("anonymous") # you can't use stats with this token
 
 await api.endpoints("gif")
 
 await api.get("gif", "kiss")
+
+await api.random("gif")
 
 await api.gif("kiss")
 
