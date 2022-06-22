@@ -1,7 +1,7 @@
 import asyncio
 from kawaiiapi import Kawaii
 
-api = Kawaii("anonymous")
+api = Kawaii("anonymous") # can't use stats with this token
 
 loop = asyncio.get_event_loop()
 
@@ -13,4 +13,4 @@ print(loop.run_until_complete(api.get("gif", "kiss")))
 
 print(loop.run_until_complete(api.gif("kiss")))
 
-print(loop.run_until_complete(api.stats()).all)
+# print(loop.run_until_complete(api.stats()).all)
