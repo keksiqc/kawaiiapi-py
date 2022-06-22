@@ -7,7 +7,7 @@ with open("README.md", "r") as fh:
 
 setup(
     name='kawaiiapi',
-    version='1.2.4',
+    version='1.2.5',
     author='Keksiqc',
     author_email='contact@keksi.me',
     license='MIT',
