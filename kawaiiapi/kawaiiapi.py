@@ -5,13 +5,11 @@ from typing import Union
 from .stats import Stats
 
 class Kawaii:
-    def __init__(self, token):
+    def __init__(self, token: str = ""):
         self.token = token
         self.url = "https://kawaii.red/api/"
 
-    async def get(self, main: str, endpoint: str, f: Union[str, list]=None) -> str:
-        if f is None:
-            f = []
+    async def get(self, main: str, endpoint: str, f: Union[str, list] = []) -> str:
         async with aiohttp.ClientSession() as session:
             async with session.get(f"{self.url}{main}/{endpoint}/token={self.token}&filter={f}/") as url:
                 image = await url.json()
@@ -35,9 +33,7 @@ class Kawaii:
                 image = await url.json()
                 return image["response"]
 
-    async def random(self, main: str=None) -> str:
-        if main is None:
-            main = "gif"
+    async def random(self, main: str = "gif") -> str:
         endpoint = random.choice(await self.endpoints(main))
         async with aiohttp.ClientSession() as session:
             async with session.get(f"{self.url}{main}/{endpoint}/token={self.token}/") as url:
