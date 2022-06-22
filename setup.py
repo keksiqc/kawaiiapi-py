@@ -9,7 +9,7 @@ setup(
     name='kawaiiapi',
     version='1.2.2',
     author='Keksiqc',
-    author_email='cotact@keksi.me',
+    author_email='contact@keksi.me',
     license='MIT',
     description='The kawaii api from Error44 as python package',
     long_description=long_description,
