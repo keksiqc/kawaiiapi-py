@@ -44,9 +44,7 @@ class Kawaii:
                 image = await url.json()
                 return image["response"]
 
-    async def endpoints(self, main: str=None) -> list:
-        if main is None:
-            main = "gif"
+    async def endpoints(self, main: str="gif") -> list:
         async with aiohttp.ClientSession() as session:
             async with session.get(f"{self.url}{main}/endpoints/token={self.token}/") as url:
                 endpoints = await url.json()
