@@ -1,0 +1,27 @@
+[tool.poetry]
+name = "kawaiiapi"
+version = "2.0.0.dev1"
+description = "A Python wrapper for the kawaii.red API"
+authors = ["Keksi <contact@keksi.me>"]
+license = "MIT"
+readme = "README.md"
+
+[tool.poetry.dependencies]
+python = "^3.11"
+
+
+[tool.poetry.group.dev.dependencies]
+black = "^23.9.0"
+ruff = "^0.0.287"
+poethepoet = "^0.22.1"
+
+
+[tool.poe.tasks]
+fmt = "black ."
+lint = "ruff ."
+lintw = "ruff . --fix"
+
+
+[build-system]
+requires = ["poetry-core"]
+build-backend = "poetry.core.masonry.api"
