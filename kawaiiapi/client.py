@@ -1,5 +1,7 @@
 class BaseClient:
-    def __init__(self, token: str = "anonymous", base_url: str = "https://kawaii.red/api/") -> None:
+    def __init__(
+        self, token: str = "anonymous", base_url: str = "https://kawaii.red/api/"
+    ) -> None:
         """Initialize the BaseClient class.
 
         Args:
