@@ -1,5 +1,9 @@
 # kawaii api
 
+> [!WARNING] Deprecated
+> This package is no longer maintained. 
+> Please use the new [keksiqc/kawaiired-py](https://github.com/keksiqc/kawaiired-py) package.
+
 The [kawaii api](https://kawaii.red/) from Error44 as [python package](https://pypi.org/project/kawaiiapi/) 
 
 # Download
