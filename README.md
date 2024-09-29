@@ -1,6 +1,6 @@
 # kawaii api
 
-> [!WARNING] Deprecated
+> [!WARNING]
 > This package is no longer maintained. 
 > Please use the new [keksiqc/kawaiired-py](https://github.com/keksiqc/kawaiired-py) package.
 
